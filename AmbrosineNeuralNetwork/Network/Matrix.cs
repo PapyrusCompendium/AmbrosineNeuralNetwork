@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AmbrosineNeuralNetwork.Network
 {
+	/// <summary>
+	/// 
+	/// </summary>
 	public unsafe class Matrix
 	{
 		public Matrix() { }
@@ -67,16 +70,14 @@ namespace AmbrosineNeuralNetwork.Network
 		/// <returns></returns>
 		public static Matrix operator *(Matrix op1, Matrix op2)
 		{
-			double[,] matrix = new double[op1.Height, op2.Width];
+			Matrix matrix = new Matrix(new double[op1.Height, op2.Width]);
 
-			fixed (double* matrixPtr = matrix)
-			{
+			fixed (double* matrixPtr = matrix._matrix)
 				for (int x = 0; x < op1.Height; x++)
 					for (int y = 0; y < op2.Width; y++)
 						DotProduct(op1, x, op2, y, matrixPtr);
-			}
 
-			return new Matrix(matrix);
+			return matrix;
 		}
 
 		private static void DotProduct(Matrix matrixA, int row, Matrix matrixB, int column, double* MatrixZ)

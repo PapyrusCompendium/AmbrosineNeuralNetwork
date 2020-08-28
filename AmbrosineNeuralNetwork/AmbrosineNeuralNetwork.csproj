@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,15 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActivationTypes\INeuralActivationType.cs" />
-    <Compile Include="ActivationTypes\LinearActivation.cs" />
-    <Compile Include="ActivationTypes\ReluActivation.cs" />
+    <Compile Include="Network\ActivationTypes\INeuralActivationType.cs" />
+    <Compile Include="Network\ActivationTypes\LinearActivation.cs" />
+    <Compile Include="Network\ActivationTypes\ReluActivation.cs" />
     <Compile Include="Network\ILayer.cs" />
     <Compile Include="Network\Layer.cs" />
     <Compile Include="Network\Matrix.cs" />
     <Compile Include="Network\NeuronArray.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

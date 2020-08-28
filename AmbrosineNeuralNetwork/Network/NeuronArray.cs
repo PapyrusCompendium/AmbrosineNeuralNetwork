@@ -8,16 +8,11 @@ namespace AmbrosineNeuralNetwork.Network
 {
 	public unsafe class NeuronArray
 	{
+		public int Length => Biases.Length;
 		public double this[int index]
 		{
-			get => _neurons[index];
-			set => _neurons[index] = value;
-		}
-
-		public double[] Neurons
-		{
-			get => _neurons;
-			set => _neurons = value;
+			get => _biases[index];
+			set => _biases[index] = value;
 		}
 
 		public double[] Biases
@@ -32,8 +27,12 @@ namespace AmbrosineNeuralNetwork.Network
 			set => _errors = value;
 		}
 
-		private double[] _neurons;
 		private double[] _biases;
 		private double[] _errors;
+
+		public void Stimulate(double[] values)
+		{
+
+		}
 	}
 }

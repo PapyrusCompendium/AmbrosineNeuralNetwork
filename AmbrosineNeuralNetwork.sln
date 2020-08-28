@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NueralNetworkExample", "Nue
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmbrosineUnitTests", "AmbrosineUnitTests\AmbrosineUnitTests.csproj", "{349C1A52-1877-4B0B-8AF2-011792126832}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmbrosineHardwareAcceleration", "AmbrosineHardwareAcceleration\AmbrosineHardwareAcceleration.csproj", "{2FD76DBD-4333-4075-A7AE-0C370EB33944}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{349C1A52-1877-4B0B-8AF2-011792126832}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{349C1A52-1877-4B0B-8AF2-011792126832}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{349C1A52-1877-4B0B-8AF2-011792126832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FD76DBD-4333-4075-A7AE-0C370EB33944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FD76DBD-4333-4075-A7AE-0C370EB33944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FD76DBD-4333-4075-A7AE-0C370EB33944}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FD76DBD-4333-4075-A7AE-0C370EB33944}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

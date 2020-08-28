@@ -8,8 +8,10 @@ namespace AmbrosineNeuralNetwork.Network
 {
 	public interface ILayer
 	{
+		bool IsInput { get; }
+		bool IsOutput { get; }
+		ILayer Child { get; }
 		ILayer Parent { get; }
-		void Propagate();
-		void AddError();
+		double[] StimulateLayers(double[] inputs);
 	}
 }
